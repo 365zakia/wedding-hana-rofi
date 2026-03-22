@@ -1,1 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Undangan Hana & Rofi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="phone-frame">
+
+    <!-- SECTION 1: HERO (Tanpa lazy agar cepat muncul) -->
+    <section class="hero">
+        <img src="daun-kiri.webp" class="daun-hias daun-kiri">
+        <img src="daun-kanan.webp" class="daun-hias daun-kanan">
+
+        <div class="butterfly-container">
+            <div class="butterfly b1"></div><div class="butterfly b2"></div>
+            <div class="butterfly b3"></div><div class="butterfly b4"></div>
+            <div class="butterfly b5"></div><div class="butterfly b6"></div>
+        </div>
+        
+        <div class="content">
+            <p class="sub-title animate-fade delay-1">UNDANGAN PERNIKAHAN</p>
+            <h1 class="nama animate-fade delay-2">Hana<br>&<br>Rofi</h1>
+            <p class="invite-text animate-fade delay-3">MENGUNDANG ANDA UNTUK HADIR<br>PADA PERNIKAHAN KAMI</p>
+            <button class="btn">Buka Undangan</button>
+        </div>
+    </section>
+
+    <!-- SECTION 2: NAMA HORIZONTAL -->
+    <section id="main-content" class="main-page hidden">
+        <div id="flower-container"></div>
+        <div class="inner-content">
+            <h1 class="nama-horizontal show-anim-text">Hana & Rofi</h1>
+            <p class="date-page">04.04.2026</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: AYAT -->
+    <section class="page-3 hidden">
+        <div class="quran-container">
+            <p class="arabic-text anim-page3">                 
+وَمِنْ ءَايَـٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًۭا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةًۭ وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَـَٔايَـٰتٍۢ لِّقَوْمٍۢ يَتَفَكَّرُونَ
+            </p>
+            <p class="translation-text anim-page3" style="transition-delay: 0.8s;">
+                "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."
+            </p>
+            <p class="surah-name anim-page3" style="transition-delay: 1.2s;">( QS. Ar-Rum: 21 )</p>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PROFIL (Ditambah loading lazy) -->
+    <!-- SECTION 4: PROFIL -->
+<section class="page-4 hidden">
+    <div class="page4-content">
+        <p class="invite-text-page4 anim-page4">Kami mengundang Bapak/Ibu/Saudara/i untuk hadir ke acara pernikahan kami :</p>
+        <div class="couple-main-wrapper">
+            <!-- Profil Hana -->
+            <div class="couple-profile anim-page4">
+                <div class="photo-frame-container">
+                    <img src="hana.webp" class="couple-photo-circle" loading="lazy">
+                </div>
+                <div class="couple-text-data anim-page4"> <!-- Tambah anim di sini -->
+                    <h2 class="couple-name">Hana Mianti</h2>
+                    <p class="couple-desc">Putri dari Bapak Prasetyo Handoko<br>dan Ibu Kristiana Irda M</p>
+                </div>
+            </div>
+
+            <div class="and-symbol anim-page4">&</div>
+
+            <!-- Profil Rofi -->
+            <div class="couple-profile anim-page4">
+                <div class="photo-frame-container">
+                    <img src="rofi.webp" class="couple-photo-circle" loading="lazy">
+                </div>
+                <div class="couple-text-data anim-page4"> <!-- Tambah anim di sini -->
+                    <h2 class="couple-name">M. Firdaus Nur Rofi</h2>
+                    <p class="couple-desc">Putra dari Bapak Sujadi<br>dan Ibu Ismi Nurhidayati</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- SECTION 5: ACARA (Ditambah loading lazy) -->
+    <section class="page-5 hidden">
+        <div class="event-container">
+            <img src="floral-frame.webp" class="floral-frame" loading="lazy">
+            <div class="event-wrapper">
+                <div class="event anim-page5">
+                    <h2 class="event-title">Akad Nikah</h2>
+                    <p class="event-day">Sabtu</p>
+                    <p class="event-date">04 April 2026</p>
+                    <p class="event-time">Jam 10.00 WIB</p>
+                </div>
+                <div class="event anim-page5">
+                    <h2 class="event-title">Tasyakuran</h2>
+                    <p class="event-day">Sabtu</p>
+                    <p class="event-date">04 April 2026</p>
+                    <p class="event-time">Jam 11.30 WIB</p>
+                </div>
+                <div class="location anim-page5">
+                    <img src="icon-location.webp" class="location-icon" loading="lazy">
+                    <p class="location-text">Bobosan,<br>Purwokerto Utara</p>
+                    <a href="https://maps.app.goo.gl/szoNQEVtPD2gcqeP9" target="_blank" class="maps-btn">Lihat Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: DOA & UCAPAN (Ditambah loading lazy) -->
+   <!-- SECTION 6: DOA & UCAPAN -->
+<section class="wishes-section hidden">
+    <!-- Judul dengan animasi -->
+    <h2 class="title-wish anim-wish">Doa & Ucapan</h2>
+    
+    <div class="ucapan-wrapper anim-frame">
+        <img src="frame-ucapan.webp" class="frame-ucapan" loading="lazy">
+        <img src="petal-2.webp" class="petal-ucapan bunga-kiri" loading="lazy">
+        <img src="petal-2.webp" class="petal-ucapan bunga-kanan" loading="lazy">
+        
+        <!-- Ikon bunga ungu -->
+        <div class="purple-flower-icon anim-frame">
+            <img src="bunga-ungu.webp" alt="Ikon Bunga Ungu" loading="lazy">
+        </div>
+
+        <!-- Form dengan animasi fade up tipis -->
+        <form id="wish-form" class="anim-wish" style="transition-delay: 0.6s;">
+            <input type="text" id="nama" placeholder="Nama" required>
+            <textarea id="ucapan" placeholder="Beri Doa & Ucapan" required></textarea>
+            
+            <div class="rsvp-group">
+                <p class="label-rsvp">Konfirmasi Kehadiran</p>
+                <div class="rsvp-options">
+                    <label class="rsvp-item">
+                        <input type="radio" name="kehadiran" value="Hadir" required>
+                        <span class="rsvp-btn">Ya</span>
+                    </label>
+                    <label class="rsvp-item">
+                        <input type="radio" name="kehadiran" value="Tidak Hadir">
+                        <span class="rsvp-btn">Tidak</span>
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn-kirim">Kirim</button>
+            <p id="status"></p>
+        </form>
+    </div>
+</section>
+
+    <!-- SECTION 7: GIFT (Ditambah loading lazy) -->
+    <section class="gift-section hidden">
+        <div class="gift-container">
+            <img src="frame-hadiah.webp" class="frame-hadiah anim-gift" loading="lazy">
+            <div class="gift-content">
+                <img src="kado.webp" class="icon-kado anim-gift" loading="lazy">
+                <h2 class="gift-title anim-gift">Tanda Kasih</h2>
+                <p class="gift-desc anim-gift">Kehadiran serta doa restu Bapak/Ibu/Saudara/i di pernikahan kami sudah lebih dari cukup. Namun, jika berkenan memberikan hadiah, kami telah menyediakan amplop digital. Terima kasih.</p>
+                <img src="logo-mandiri.webp" class="bank-logo anim-gift" loading="lazy">
+                <p class="account-name anim-gift">Hana Mianti</p>
+                <p id="norek" class="anim-gift">9000046301181</p>
+                <div class="account-number-display anim-gift" onclick="copyNorek()">
+                    <span id="copy-toast">Salin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <audio id="bg-music" loop>
+        <source src="nothings.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+<script>
+    const openBtn = document.querySelector('.btn');
+    const heroSection = document.querySelector('.hero');
+    const mainSection = document.querySelector('#main-content');
+    const page3 = document.querySelector('.page-3');
+    const page4 = document.querySelector('.page-4');
+    const page5 = document.querySelector('.page-5');
+    const wishesSection = document.querySelector('.wishes-section');
+    const giftSection = document.querySelector('.gift-section'); 
+    const music = document.getElementById("bg-music");
+    let petalInterval;
+
+    openBtn.addEventListener('click', function() {
+        music.play();
+        heroSection.style.opacity = '0';
+        heroSection.style.transition = '0.8s';
+        setTimeout(() => {
+            heroSection.classList.add('hidden');
+            [mainSection, page3, page4, page5, wishesSection, giftSection].forEach(el => {
+                if(el) el.classList.remove('hidden');
+            });
+            setTimeout(() => {
+                mainSection.classList.add('show-anim');
+                petalInterval = setInterval(createPetal, 1500);
+            }, 100);
+        }, 800);
+    });
+
+    function createPetal(){
+        const container = document.getElementById('flower-container');
+        if(!container) return;
+        const petal = document.createElement('div');
+        petal.classList.add('petal');
+        const size = Math.random() * 20 + 15;
+        // Penambahan loading lazy juga bisa disematkan di elemen dinamis jika diperlukan
+        petal.innerHTML = `<img src="petal.webp" style="width:${size}px;height:auto;" loading="lazy">`;
+        petal.style.left = Math.random() * 100 + 'vw';
+        petal.style.animationDuration = Math.random() * 5 + 5 + 's';
+        container.appendChild(petal);
+        setTimeout(() => { petal.remove(); }, 10000);
+    }
+
+    window.addEventListener("scroll", function() {
+        const tinggiLayar = window.innerHeight;
+        if(page3 && page3.getBoundingClientRect().top < tinggiLayar - 200) page3.classList.add("show-page3");
+        if(page4 && page4.getBoundingClientRect().top < tinggiLayar - 200) page4.classList.add("show-page4");
+        if(page5 && page5.getBoundingClientRect().top < tinggiLayar - 200) page5.classList.add("show-page5");
+        if(wishesSection && wishesSection.getBoundingClientRect().top < tinggiLayar - 200) wishesSection.classList.add("show-wish");
+        if(giftSection && giftSection.getBoundingClientRect().top < tinggiLayar - 200) giftSection.classList.add("show-gift");
+    });
+
+    function copyNorek() {
+        const norekText = document.getElementById("norek").innerText;
+        const toast = document.getElementById("copy-toast");
+        navigator.clipboard.writeText(norekText).then(() => {
+            toast.innerText = "Tersalin!";
+            setTimeout(() => { toast.innerText = "Salin"; }, 2000);
+        });
+    }
+
+    const form = document.getElementById("wish-form");
+    if (form) {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const statusTxt = document.getElementById("status");
+            statusTxt.innerText = "Sedang mengirim...";
+            const requestBody = new URLSearchParams(new FormData(form));
+            
+            fetch("https://script.google.com/macros/s/AKfycbyOzPGbogX9aKwf23ATmQxtumhuUSFrHMIhxY3r8xCYsxM4jgSTjwbcmDPG3de-enlA/exec", {
+                method: "POST",
+                mode: "no-cors",
+                body: requestBody
+            }).then(() => {
+                statusTxt.innerHTML = "Ucapan berhasil<br>dikirim ❤️";
+                form.reset();
+            });
+        });
+    }
+</script>
+
+</body>
+</html>
