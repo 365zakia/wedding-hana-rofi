@@ -112,7 +112,6 @@
     </section>
 
     <!-- SECTION 6: DOA & UCAPAN (Ditambah loading lazy) -->
-   <!-- SECTION 6: DOA & UCAPAN -->
 <section class="wishes-section hidden">
     <!-- Judul dengan animasi -->
     <h2 class="title-wish anim-wish">Doa & Ucapan</h2>
@@ -129,25 +128,30 @@
 
         <!-- Form dengan animasi fade up tipis -->
         <form id="wish-form" class="anim-wish" style="transition-delay: 0.6s;">
-            <input type="text" id="nama" placeholder="Nama" required>
-            <textarea id="ucapan" placeholder="Beri Doa & Ucapan" required></textarea>
+           <input type="text" name="nama" id="nama" placeholder="Nama" required>
+            <textarea name="ucapan" id="ucapan" placeholder="Beri Doa & Ucapan" required></textarea>
             
             <div class="rsvp-group">
-                <p class="label-rsvp">Konfirmasi Kehadiran</p>
-                <div class="rsvp-options">
-                    <label class="rsvp-item">
-                        <input type="radio" name="kehadiran" value="Hadir" required>
-                        <span class="rsvp-btn">Ya</span>
-                    </label>
-                    <label class="rsvp-item">
-                        <input type="radio" name="kehadiran" value="Tidak Hadir">
-                        <span class="rsvp-btn">Tidak</span>
-                    </label>
-                </div>
-            </div>
-            <button type="submit" class="btn-kirim">Kirim</button>
-            <p id="status"></p>
-        </form>
+        <p class="label-rsvp">Konfirmasi Kehadiran</p>
+        <div class="rsvp-options">
+            <!-- 3. Radio Hadir (name="kehadiran") -->
+            <label class="rsvp-item">
+                <input type="radio" name="Kehadiran" value="Hadir" required>
+                <span class="rsvp-btn">Ya</span>
+            </label>
+            <!-- 4. Radio Tidak Hadir (name="kehadiran" - HARUS SAMA) -->
+            <label class="rsvp-item">
+                <input type="radio" name="Kehadiran" value="Tidak Hadir">
+                <span class="rsvp-btn">Tidak</span>
+            </label>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn-kirim">Kirim</button>
+    
+    <!-- Tempat teks "Berhasil Terkirim" muncul -->
+    <p id="status"></p>
+</form>
     </div>
 </section>
 
@@ -164,7 +168,7 @@
     const page3 = document.querySelector('.page-3');
     const page4 = document.querySelector('.page-4');
     const page5 = document.querySelector('.page-5');
-    const wishesSection = document.querySelector('.wishes-section');
+    const wishesSection = document.querySelector('.wishes-section'); 
     const music = document.getElementById("bg-music");
     let petalInterval;
 
