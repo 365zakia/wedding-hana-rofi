@@ -133,6 +133,7 @@ p {
 .inner-content { 
     z-index: 10; 
     margin-top: 5vh; 
+    margin-right: 2vh;
 }
 
 .nama-horizontal {
